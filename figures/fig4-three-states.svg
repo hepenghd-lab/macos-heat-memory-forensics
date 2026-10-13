@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="440" viewBox="0 0 960 440" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif">
+  <rect width="960" height="440" fill="#ffffff"/>
+  <text x="480" y="28" text-anchor="middle" font-size="17" font-weight="600" fill="#111827">图 4　三状态对照：WindowServer 负载与采集链活跃度脱钩</text>
+  <text x="480" y="48" text-anchor="middle" font-size="12" fill="#6b7280">自变量＝ChatGPT/Codex 的状态（缺席 / 闲置 / 活跃工作）；采集链活跃度变化巨大，WindowServer 几乎不动</text>
+
+  <!-- LEFT PANEL -->
+  <text x="60" y="82" font-size="13" font-weight="600" fill="#111827">左：WindowServer 单核占用（60 秒窗口，累计 CPU 时间差）</text>
+  <line x1="70" y1="300" x2="450" y2="300" stroke="#9ca3af"/>
+  <g stroke="#e5e7eb"><line x1="70" y1="240" x2="450" y2="240"/><line x1="70" y1="180" x2="450" y2="180"/><line x1="70" y1="120" x2="450" y2="120"/></g>
+  <g font-size="10" fill="#6b7280" text-anchor="end">
+    <text x="64" y="304">0%</text><text x="64" y="244">20%</text><text x="64" y="184">40%</text><text x="64" y="124">60%</text>
+  </g>
+
+  <!-- bars: 40.9 (absent), 43.9 (idle present), 41.8 (active) ; scale 3px per %  -->
+  <rect x="95"  y="177.3" width="70" height="122.7" fill="#2563eb"/>
+  <text x="130" y="170" text-anchor="middle" font-size="12" font-weight="600" fill="#1e40af">40.9%</text>
+  <text x="130" y="320" text-anchor="middle" font-size="11" fill="#111827">缺席</text>
+  <text x="130" y="335" text-anchor="middle" font-size="10" fill="#6b7280">Cmd+Q 后</text>
+
+  <rect x="215" y="168.3" width="70" height="131.7" fill="#d97706"/>
+  <text x="250" y="161" text-anchor="middle" font-size="12" font-weight="600" fill="#92400e">43.9%</text>
+  <text x="250" y="320" text-anchor="middle" font-size="11" fill="#111827">在场·闲置</text>
+  <text x="250" y="335" text-anchor="middle" font-size="10" fill="#6b7280">等额度</text>
+
+  <rect x="335" y="174.6" width="70" height="125.4" fill="#dc2626"/>
+  <text x="370" y="167" text-anchor="middle" font-size="12" font-weight="600" fill="#991b1b">41.8%</text>
+  <text x="370" y="320" text-anchor="middle" font-size="11" fill="#111827">活跃工作</text>
+  <text x="370" y="335" text-anchor="middle" font-size="10" fill="#6b7280">6 窗口均值</text>
+  <!-- range whisker for active arm 39.5-44.1 -->
+  <line x1="370" y1="167.6" x2="370" y2="181.6" stroke="#111827" stroke-width="1.4"/>
+  <line x1="362" y1="167.6" x2="378" y2="167.6" stroke="#111827" stroke-width="1.4"/>
+  <line x1="362" y1="181.6" x2="378" y2="181.6" stroke="#111827" stroke-width="1.4"/>
+  <text x="260" y="360" text-anchor="middle" font-size="11.5" fill="#374151">极差仅 3.0 个百分点（40.9 – 43.9）</text>
+
+  <!-- RIGHT PANEL -->
+  <text x="520" y="82" font-size="13" font-weight="600" fill="#111827">右：采集链进程占用（同窗口）</text>
+  <line x1="530" y1="300" x2="910" y2="300" stroke="#9ca3af"/>
+  <g stroke="#e5e7eb"><line x1="530" y1="240" x2="910" y2="240"/><line x1="530" y1="180" x2="910" y2="180"/><line x1="530" y1="120" x2="910" y2="120"/></g>
+  <g font-size="10" fill="#6b7280" text-anchor="end">
+    <text x="524" y="304">0%</text><text x="524" y="244">2%</text><text x="524" y="184">4%</text><text x="524" y="124">6%</text>
+  </g>
+  <text x="524" y="360" text-anchor="end" font-size="10" fill="#6b7280">（单位：单核 %）</text>
+
+  <!-- absent: replayd 0.02, screencapture 0.01 -->
+  <rect x="555" y="299.4" width="70" height="0.6" fill="#9ca3af"/>
+  <text x="590" y="290" text-anchor="middle" font-size="11" fill="#374151">≈0%</text>
+  <text x="590" y="320" text-anchor="middle" font-size="11" fill="#111827">缺席</text>
+
+  <!-- idle present: replayd 0.0, but SkyComputerUseService 0 (未启动); use ~0.05 -->
+  <rect x="675" y="298.5" width="70" height="1.5" fill="#9ca3af"/>
+  <text x="710" y="290" text-anchor="middle" font-size="11" fill="#374151">≈0%</text>
+  <text x="710" y="320" text-anchor="middle" font-size="11" fill="#111827">在场·闲置</text>
+
+  <!-- active: replayd 0.13 + screencapture 0.005 ≈ 0.14% -->
+  <rect x="795" y="295.8" width="70" height="4.2" fill="#dc2626"/>
+  <text x="830" y="288" text-anchor="middle" font-size="11" font-weight="600" fill="#991b1b">0.1%</text>
+  <text x="830" y="320" text-anchor="middle" font-size="11" fill="#111827">活跃工作</text>
+  <text x="830" y="335" text-anchor="middle" font-size="10" fill="#6b7280">replayd 最忙时</text>
+
+  <text x="720" y="360" text-anchor="middle" font-size="11.5" fill="#374151">采集链即使「活跃」也只有 0.1% —— 它从来没有能力带动 41%</text>
+
+  <!-- bottom note -->
+  <rect x="60" y="382" width="840" height="42" fill="#f9fafb" stroke="#e5e7eb"/>
+  <text x="480" y="400" text-anchor="middle" font-size="12" fill="#111827">WindowServer 的 41% 在三种状态下都稳定存在，<tspan font-weight="600">与 Codex 的存在、闲置、活跃均无关</tspan></text>
+  <text x="480" y="418" text-anchor="middle" font-size="11.5" fill="#6b7280">同期最重的可见渲染进程稳定在 37–38%（本对话 GUI），与 WindowServer 呈近乎 1:1 —— 指向「可见窗口重绘速率」这一机制</text>
+</svg>
