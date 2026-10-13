@@ -1,90 +1,146 @@
 ### DURING 系列采集（Codex 正在跑邮件清理/归类任务）###
-启动: 2026-10-13 23:42:51
-T0 内存: free=6799p comp_occ=359951p comp_store=722572p | total = 5120.00M  used = 4447.62M  free = 672.38M  (encrypted) | memfree=48% | codex_procs=35
+启动: 2026-10-13 23:52:43
+T0 内存: free=5045p comp_occ=418117p comp_store=800437p | total = 5120.00M  used = 4431.62M  free = 688.38M  (encrypted) | memfree=41% | codex_procs=39
 
------ 窗口 1  (23:43:51, 60 秒) -----
-内存: free=5384p comp_occ=377585p comp_store=756646p | total = 5120.00M  used = 4439.62M  free = 680.38M  (encrypted) | memfree=47% | codex_procs=36
-  WindowServer                  25.98 CPU秒    43.3% 单核   (进程数 1)
-  Mail                           0.01 CPU秒     0.0% 单核   (进程数 1)
+----- 窗口 1  (23:53:44, 60 秒) -----
+内存: free=9908p comp_occ=426146p comp_store=806477p | total = 5120.00M  used = 4431.62M  free = 688.38M  (encrypted) | memfree=42% | codex_procs=39
+  WindowServer                  25.26 CPU秒    42.1% 单核   (进程数 1)
+  Mail                           2.05 CPU秒     3.4% 单核   (进程数 1)
+  SkyComputerUseService          2.18 CPU秒     3.6% 单核   (进程数 1)
+  replayd                        0.11 CPU秒     0.2% 单核   (进程数 1)
+  screencaptureui                0.33 CPU秒     0.5% 单核   (进程数 1)
+  Codex(Service)                 4.26 CPU秒     7.1% 单核   (进程数 4)
+  Codex(Renderer)xN             10.75 CPU秒    17.9% 单核   (进程数 9)
+  Codex(main)                    3.47 CPU秒     5.8% 单核   (进程数 1)
+  cua_node+node_repl             0.50 CPU秒     0.8% 单核   (进程数 21)
+  DeepSeekHarness(renderer)     21.77 CPU秒    36.3% 单核   (进程数 1)
+  DeepSeekHarness(others)        2.64 CPU秒     4.4% 单核   (进程数 2)
+
+----- 窗口 2  (23:54:44, 60 秒) -----
+内存: free=5386p comp_occ=416261p comp_store=785809p | total = 5120.00M  used = 4431.62M  free = 688.38M  (encrypted) | memfree=43% | codex_procs=39
+  WindowServer                  22.80 CPU秒    38.0% 单核   (进程数 1)
+  Mail                           0.52 CPU秒     0.9% 单核   (进程数 1)
+  SkyComputerUseService          0.08 CPU秒     0.1% 单核   (进程数 1)
+  replayd                        0.00 CPU秒     0.0% 单核   (进程数 1)
+  screencaptureui                0.35 CPU秒     0.6% 单核   (进程数 1)
+  Codex(Service)                 0.80 CPU秒     1.3% 单核   (进程数 4)
+  Codex(Renderer)xN              0.68 CPU秒     1.1% 单核   (进程数 9)
+  Codex(main)                    0.98 CPU秒     1.6% 单核   (进程数 1)
+  cua_node+node_repl             0.10 CPU秒     0.2% 单核   (进程数 21)
+  DeepSeekHarness(renderer)     20.10 CPU秒    33.5% 单核   (进程数 1)
+  DeepSeekHarness(others)        3.01 CPU秒     5.0% 单核   (进程数 2)
+
+----- 窗口 3  (23:55:44, 60 秒) -----
+内存: free=8419p comp_occ=393361p comp_store=752967p | total = 5120.00M  used = 4431.62M  free = 688.38M  (encrypted) | memfree=45% | codex_procs=39
+  WindowServer                  24.46 CPU秒    40.8% 单核   (进程数 1)
+  Mail                           0.69 CPU秒     1.1% 单核   (进程数 1)
+  SkyComputerUseService          0.05 CPU秒     0.1% 单核   (进程数 1)
+  replayd                        0.00 CPU秒     0.0% 单核   (进程数 1)
+  screencaptureui                0.44 CPU秒     0.7% 单核   (进程数 1)
+  Codex(Service)                 0.78 CPU秒     1.3% 单核   (进程数 4)
+  Codex(Renderer)xN              0.70 CPU秒     1.2% 单核   (进程数 9)
+  Codex(main)                    0.66 CPU秒     1.1% 单核   (进程数 1)
+  cua_node+node_repl             0.06 CPU秒     0.1% 单核   (进程数 21)
+  DeepSeekHarness(renderer)     21.92 CPU秒    36.5% 单核   (进程数 1)
+  DeepSeekHarness(others)        3.94 CPU秒     6.6% 单核   (进程数 2)
+
+----- 窗口 4  (23:56:44, 60 秒) -----
+内存: free=5762p comp_occ=453216p comp_store=860552p | total = 5120.00M  used = 4415.62M  free = 704.38M  (encrypted) | memfree=37% | codex_procs=39
+  WindowServer                  25.15 CPU秒    41.9% 单核   (进程数 1)
+  Mail                           0.73 CPU秒     1.2% 单核   (进程数 1)
+  SkyComputerUseService          0.08 CPU秒     0.1% 单核   (进程数 1)
+  replayd                        0.01 CPU秒     0.0% 单核   (进程数 1)
+  screencaptureui                0.61 CPU秒     1.0% 单核   (进程数 1)
+  Codex(Service)                 2.05 CPU秒     3.4% 单核   (进程数 4)
+  Codex(Renderer)xN              3.60 CPU秒     6.0% 单核   (进程数 9)
+  Codex(main)                    2.38 CPU秒     4.0% 单核   (进程数 1)
+  cua_node+node_repl             0.14 CPU秒     0.2% 单核   (进程数 21)
+  DeepSeekHarness(renderer)     20.24 CPU秒    33.7% 单核   (进程数 1)
+  DeepSeekHarness(others)        2.19 CPU秒     3.6% 单核   (进程数 2)
+
+----- 窗口 5  (23:57:44, 60 秒) -----
+内存: free=5368p comp_occ=441541p comp_store=840157p | total = 5120.00M  used = 4415.62M  free = 704.38M  (encrypted) | memfree=38% | codex_procs=39
+  WindowServer                  26.95 CPU秒    44.9% 单核   (进程数 1)
+  Mail                           0.43 CPU秒     0.7% 单核   (进程数 1)
+  SkyComputerUseService          0.03 CPU秒     0.0% 单核   (进程数 1)
+  replayd                        0.00 CPU秒     0.0% 单核   (进程数 1)
+  screencaptureui                0.40 CPU秒     0.7% 单核   (进程数 1)
+  Codex(Service)                 0.74 CPU秒     1.2% 单核   (进程数 4)
+  Codex(Renderer)xN              0.77 CPU秒     1.3% 单核   (进程数 9)
+  Codex(main)                    0.72 CPU秒     1.2% 单核   (进程数 1)
+  cua_node+node_repl             0.08 CPU秒     0.1% 单核   (进程数 21)
+  DeepSeekHarness(renderer)     21.80 CPU秒    36.3% 单核   (进程数 1)
+  DeepSeekHarness(others)        1.49 CPU秒     2.5% 单核   (进程数 2)
+
+----- 窗口 6  (23:58:44, 60 秒) -----
+内存: free=17726p comp_occ=450790p comp_store=846231p | total = 5120.00M  used = 4407.62M  free = 712.38M  (encrypted) | memfree=40% | codex_procs=39
+  WindowServer                  26.61 CPU秒    44.4% 单核   (进程数 1)
+  Mail                           0.41 CPU秒     0.7% 单核   (进程数 1)
+  SkyComputerUseService          0.04 CPU秒     0.1% 单核   (进程数 1)
+  replayd                        0.00 CPU秒     0.0% 单核   (进程数 1)
+  screencaptureui                0.15 CPU秒     0.3% 单核   (进程数 1)
+  Codex(Service)                 0.77 CPU秒     1.3% 单核   (进程数 4)
+  Codex(Renderer)xN              0.56 CPU秒     0.9% 单核   (进程数 9)
+  Codex(main)                    0.68 CPU秒     1.1% 单核   (进程数 1)
+  cua_node+node_repl             0.11 CPU秒     0.2% 单核   (进程数 21)
+  DeepSeekHarness(renderer)     21.36 CPU秒    35.6% 单核   (进程数 1)
+  DeepSeekHarness(others)        1.69 CPU秒     2.8% 单核   (进程数 2)
+
+----- 窗口 7  (23:59:45, 60 秒) -----
+内存: free=4893p comp_occ=461135p comp_store=866018p | total = 5120.00M  used = 4399.62M  free = 720.38M  (encrypted) | memfree=37% | codex_procs=39
+  WindowServer                  26.08 CPU秒    43.5% 单核   (进程数 1)
+  Mail                           0.13 CPU秒     0.2% 单核   (进程数 1)
+  SkyComputerUseService          0.00 CPU秒     0.0% 单核   (进程数 1)
+  replayd                        0.00 CPU秒     0.0% 单核   (进程数 1)
+  screencaptureui                0.09 CPU秒     0.2% 单核   (进程数 1)
+  Codex(Service)                 0.72 CPU秒     1.2% 单核   (进程数 4)
+  Codex(Renderer)xN              0.41 CPU秒     0.7% 单核   (进程数 9)
+  Codex(main)                    0.38 CPU秒     0.6% 单核   (进程数 1)
+  cua_node+node_repl             0.07 CPU秒     0.1% 单核   (进程数 21)
+  DeepSeekHarness(renderer)     21.85 CPU秒    36.4% 单核   (进程数 1)
+  DeepSeekHarness(others)        1.64 CPU秒     2.7% 单核   (进程数 2)
+
+----- 窗口 8  (00:00:45, 60 秒) -----
+内存: free=8154p comp_occ=458003p comp_store=882567p | total = 5120.00M  used = 4648.00M  free = 472.00M  (encrypted) | memfree=37% | codex_procs=39
+  WindowServer                  26.29 CPU秒    43.8% 单核   (进程数 1)
+  Mail                           1.66 CPU秒     2.8% 单核   (进程数 1)
+  SkyComputerUseService          0.07 CPU秒     0.1% 单核   (进程数 1)
+  replayd                        0.00 CPU秒     0.0% 单核   (进程数 1)
+  screencaptureui                0.78 CPU秒     1.3% 单核   (进程数 1)
+  Codex(Service)                 1.42 CPU秒     2.4% 单核   (进程数 4)
+  Codex(Renderer)xN              1.73 CPU秒     2.9% 单核   (进程数 9)
+  Codex(main)                    1.58 CPU秒     2.6% 单核   (进程数 1)
+  cua_node+node_repl             0.41 CPU秒     0.7% 单核   (进程数 21)
+  DeepSeekHarness(renderer)     22.16 CPU秒    36.9% 单核   (进程数 1)
+  DeepSeekHarness(others)        1.85 CPU秒     3.1% 单核   (进程数 2)
+
+----- 窗口 9  (00:01:45, 60 秒) -----
+内存: free=5313p comp_occ=455774p comp_store=875435p | total = 6144.00M  used = 4670.19M  free = 1473.81M  (encrypted) | memfree=39% | codex_procs=39
+  WindowServer                  25.69 CPU秒    42.8% 单核   (进程数 1)
+  Mail                           0.51 CPU秒     0.8% 单核   (进程数 1)
+  SkyComputerUseService          0.05 CPU秒     0.1% 单核   (进程数 1)
+  replayd                        0.00 CPU秒     0.0% 单核   (进程数 1)
+  screencaptureui                0.49 CPU秒     0.8% 单核   (进程数 1)
+  Codex(Service)                 0.88 CPU秒     1.5% 单核   (进程数 4)
+  Codex(Renderer)xN              2.54 CPU秒     4.2% 单核   (进程数 9)
+  Codex(main)                    1.08 CPU秒     1.8% 单核   (进程数 1)
+  cua_node+node_repl             0.22 CPU秒     0.4% 单核   (进程数 21)
+  DeepSeekHarness(renderer)     22.85 CPU秒    38.1% 单核   (进程数 1)
+  DeepSeekHarness(others)        1.96 CPU秒     3.3% 单核   (进程数 2)
+
+----- 窗口 10  (00:02:45, 60 秒) -----
+内存: free=5865p comp_occ=455862p comp_store=885897p | total = 6144.00M  used = 4670.19M  free = 1473.81M  (encrypted) | memfree=39% | codex_procs=39
+  WindowServer                  26.72 CPU秒    44.5% 单核   (进程数 1)
+  Mail                           0.45 CPU秒     0.8% 单核   (进程数 1)
   SkyComputerUseService          0.01 CPU秒     0.0% 单核   (进程数 1)
   replayd                        0.00 CPU秒     0.0% 单核   (进程数 1)
-  screencaptureui                0.01 CPU秒     0.0% 单核   (进程数 1)
-  Codex(Service)                 6.80 CPU秒    11.3% 单核   (进程数 4)
-  Codex(Renderer)xN             13.98 CPU秒    23.3% 单核   (进程数 10)
-  Codex(main)                    1.61 CPU秒     2.7% 单核   (进程数 1)
-  cua_node+node_repl             0.15 CPU秒     0.3% 单核   (进程数 17)
-  DeepSeekHarness(renderer)     23.16 CPU秒    38.6% 单核   (进程数 1)
-  DeepSeekHarness(others)        1.98 CPU秒     3.3% 单核   (进程数 2)
+  screencaptureui                0.16 CPU秒     0.3% 单核   (进程数 1)
+  Codex(Service)                 0.63 CPU秒     1.1% 单核   (进程数 4)
+  Codex(Renderer)xN              1.45 CPU秒     2.4% 单核   (进程数 9)
+  Codex(main)                    0.36 CPU秒     0.6% 单核   (进程数 1)
+  cua_node+node_repl             0.10 CPU秒     0.2% 单核   (进程数 21)
+  DeepSeekHarness(renderer)     22.35 CPU秒    37.3% 单核   (进程数 1)
+  DeepSeekHarness(others)        1.61 CPU秒     2.7% 单核   (进程数 2)
 
------ 窗口 2  (23:44:51, 60 秒) -----
-内存: free=7619p comp_occ=398804p comp_store=788013p | total = 5120.00M  used = 4431.62M  free = 688.38M  (encrypted) | memfree=44% | codex_procs=39
-  WindowServer                  26.48 CPU秒    44.1% 单核   (进程数 1)
-  Mail                           0.46 CPU秒     0.8% 单核   (进程数 1)
-  SkyComputerUseService          2.04 CPU秒     3.4% 单核   (进程数 1)
-  replayd                        0.04 CPU秒     0.1% 单核   (进程数 1)
-  screencaptureui                0.00 CPU秒     0.0% 单核   (进程数 1)
-  Codex(Service)                 7.45 CPU秒    12.4% 单核   (进程数 4)
-  Codex(Renderer)xN             11.76 CPU秒    19.6% 单核   (进程数 10)
-  Codex(main)                    2.39 CPU秒     4.0% 单核   (进程数 1)
-  cua_node+node_repl             2.84 CPU秒     4.7% 单核   (进程数 20)
-  DeepSeekHarness(renderer)     22.50 CPU秒    37.5% 单核   (进程数 1)
-  DeepSeekHarness(others)        1.36 CPU秒     2.3% 单核   (进程数 2)
-
------ 窗口 3  (23:45:52, 60 秒) -----
-内存: free=5914p comp_occ=413071p comp_store=784852p | total = 5120.00M  used = 4431.62M  free = 688.38M  (encrypted) | memfree=43% | codex_procs=39
-  WindowServer                  24.09 CPU秒    40.2% 单核   (进程数 1)
-  Mail                           1.81 CPU秒     3.0% 单核   (进程数 1)
-  SkyComputerUseService          2.41 CPU秒     4.0% 单核   (进程数 1)
-  replayd                        0.08 CPU秒     0.1% 单核   (进程数 1)
-  screencaptureui                0.01 CPU秒     0.0% 单核   (进程数 1)
-  Codex(Service)                 5.15 CPU秒     8.6% 单核   (进程数 4)
-  Codex(Renderer)xN              7.73 CPU秒    12.9% 单核   (进程数 10)
-  Codex(main)                    1.15 CPU秒     1.9% 单核   (进程数 1)
-  cua_node+node_repl             0.79 CPU秒     1.3% 单核   (进程数 20)
-  DeepSeekHarness(renderer)     22.72 CPU秒    37.9% 单核   (进程数 1)
-  DeepSeekHarness(others)        1.29 CPU秒     2.1% 单核   (进程数 2)
-
------ 窗口 4  (23:46:52, 60 秒) -----
-内存: free=8385p comp_occ=428118p comp_store=795679p | total = 5120.00M  used = 4431.62M  free = 688.38M  (encrypted) | memfree=41% | codex_procs=39
-  WindowServer                  23.70 CPU秒    39.5% 单核   (进程数 1)
-  Mail                           2.73 CPU秒     4.6% 单核   (进程数 1)
-  SkyComputerUseService          2.81 CPU秒     4.7% 单核   (进程数 1)
-  replayd                        0.10 CPU秒     0.2% 单核   (进程数 1)
-  screencaptureui                0.00 CPU秒     0.0% 单核   (进程数 1)
-  Codex(Service)                 5.37 CPU秒     9.0% 单核   (进程数 4)
-  Codex(Renderer)xN              7.28 CPU秒    12.1% 单核   (进程数 10)
-  Codex(main)                    0.67 CPU秒     1.1% 单核   (进程数 1)
-  cua_node+node_repl             0.65 CPU秒     1.1% 单核   (进程数 20)
-  DeepSeekHarness(renderer)     22.79 CPU秒    38.0% 单核   (进程数 1)
-  DeepSeekHarness(others)        1.27 CPU秒     2.1% 单核   (进程数 2)
-
------ 窗口 5  (23:47:52, 60 秒) -----
-内存: free=5618p comp_occ=419872p comp_store=791464p | total = 5120.00M  used = 4431.62M  free = 688.38M  (encrypted) | memfree=42% | codex_procs=40
-  WindowServer                  25.05 CPU秒    41.7% 单核   (进程数 1)
-  Mail                           2.34 CPU秒     3.9% 单核   (进程数 1)
-  SkyComputerUseService          3.46 CPU秒     5.8% 单核   (进程数 1)
-  replayd                        0.10 CPU秒     0.2% 单核   (进程数 1)
-  screencaptureui                0.01 CPU秒     0.0% 单核   (进程数 1)
-  Codex(Service)                 7.56 CPU秒    12.6% 单核   (进程数 4)
-  Codex(Renderer)xN             11.36 CPU秒    18.9% 单核   (进程数 10)
-  Codex(main)                    0.91 CPU秒     1.5% 单核   (进程数 1)
-  cua_node+node_repl             1.03 CPU秒     1.7% 单核   (进程数 21)
-  DeepSeekHarness(renderer)     22.27 CPU秒    37.1% 单核   (进程数 1)
-  DeepSeekHarness(others)        1.35 CPU秒     2.3% 单核   (进程数 2)
-
------ 窗口 6  (23:48:52, 60 秒) -----
-内存: free=5454p comp_occ=420377p comp_store=789007p | total = 5120.00M  used = 4431.62M  free = 688.38M  (encrypted) | memfree=42% | codex_procs=40
-  WindowServer                  25.03 CPU秒    41.7% 单核   (进程数 1)
-  Mail                           5.36 CPU秒     8.9% 单核   (进程数 1)
-  SkyComputerUseService          3.98 CPU秒     6.6% 单核   (进程数 1)
-  replayd                        0.07 CPU秒     0.1% 单核   (进程数 1)
-  screencaptureui                0.00 CPU秒     0.0% 单核   (进程数 1)
-  Codex(Service)                 7.96 CPU秒    13.3% 单核   (进程数 4)
-  Codex(Renderer)xN             10.82 CPU秒    18.0% 单核   (进程数 10)
-  Codex(main)                    0.55 CPU秒     0.9% 单核   (进程数 1)
-  cua_node+node_repl             0.75 CPU秒     1.2% 单核   (进程数 21)
-  DeepSeekHarness(renderer)     23.00 CPU秒    38.3% 单核   (进程数 1)
-  DeepSeekHarness(others)        1.34 CPU秒     2.2% 单核   (进程数 2)
-
-结束: 2026-10-13 23:48:52
-结束内存: free=5460p comp_occ=420377p comp_store=789006p | total = 5120.00M  used = 4431.62M  free = 688.38M  (encrypted) | memfree=42% | codex_procs=40
+结束: 2026-10-14 00:02:45
+结束内存: free=5851p comp_occ=455859p comp_store=885892p | total = 6144.00M  used = 4670.19M  free = 1473.81M  (encrypted) | memfree=39% | codex_procs=39
