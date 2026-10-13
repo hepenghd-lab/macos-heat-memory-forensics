@@ -1,0 +1,21 @@
+测量窗口 60 秒；单核 100% = 60 CPU秒
+   CPU秒     单核%  进程
+  21.79   36.3%  [10619] DeepSeek Harness Helper (Renderer)
+  21.28   35.5%  [585] WindowServer
+   7.94   13.2%  [10609] DeepSeek Harness Helper
+   2.38    4.0%  [4876] com.apple.WebKit.WebContent
+   1.27    2.1%  [10625] DeepSeek Harness
+   0.95    1.6%  [27942] com.apple.WebKit.WebContent
+   0.85    1.4%  [695] com.apple.DriverKit-AppleBCMWLAN
+   0.85    1.4%  [27171] verge-mihomo
+   0.83    1.4%  [31474] Activity Monitor
+   0.75    1.2%  [27918] sysmond
+   0.71    1.2%  [10608] DeepSeek Harness
+   0.48    0.8%  [1028] ControlCenter
+   0.48    0.8%  [1] launchd
+   0.40    0.7%  [1815] IsExtensionEnabled
+   0.35    0.6%  [952] pkd
+   0.32    0.5%  [44887] Python
+
+前 16 名合计 61.6 CPU秒 = 窗口内 1.03 个核心持续满载
+全机 10 核理论上限 600 CPU秒 → 占用率 10.3%

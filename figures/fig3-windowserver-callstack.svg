@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="480" viewBox="0 0 960 480" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif">
+  <rect width="960" height="480" fill="#ffffff"/>
+  <text x="480" y="28" text-anchor="middle" font-size="17" font-weight="600" fill="#111827">图 3　WindowServer 主线程时间去向（sample 10 秒，3916 个采样）</text>
+  <text x="480" y="48" text-anchor="middle" font-size="12" fill="#6b7280">80% 在等事件，18.6% 花在「窗口层树的 CoreAnimation 合成准备」上 —— 这才是那 41% CPU 的去处</text>
+
+  <!-- stacked bar -->
+  <rect x="80" y="80" width="641.3" height="52" fill="#9ca3af"/>
+  <rect x="721.3" y="80" width="149.1" height="52" fill="#dc2626"/>
+  <rect x="870.4" y="80" width="9.6" height="52" fill="#1f2937"/>
+
+  <text x="400" y="111" text-anchor="middle" font-size="13" font-weight="600" fill="#ffffff">mach_msg 等待事件　3139（80.1%）</text>
+  <text x="795" y="111" text-anchor="middle" font-size="12" font-weight="600" fill="#ffffff">显示更新 730（18.6%）</text>
+
+  <!-- leader lines -->
+  <line x1="795" y1="132" x2="795" y2="152" stroke="#dc2626" stroke-width="1"/>
+  <text x="795" y="168" text-anchor="middle" font-size="12" fill="#991b1b">真正在烧 CPU 的部分</text>
+
+  <!-- call stack -->
+  <rect x="80" y="190" width="800" height="212" fill="#f9fafb" stroke="#e5e7eb"/>
+  <text x="96" y="212" font-size="12" font-weight="600" fill="#374151">采样到的活动调用链（每层数字＝该栈帧出现的采样数）</text>
+
+  <g font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11.5" fill="#111827">
+    <text x="96" y="236">non_coalesced_timer_handler                              604</text>
+    <text x="112" y="254">└ run_timer_pass                                        604</text>
+    <text x="128" y="272">└ update_display_callback(void*, double)              579</text>
+    <text x="144" y="290">└ CGXUpdateDisplay                                    578</text>
+    <text x="160" y="308">└ WS::Updater::UpdateDisplays(...)                   364</text>
+    <text x="176" y="326">└ WS::Updater::prepare_coreanimation(...)            329</text>
+    <text x="192" y="344">└ defenestrator3::ca_prepare_begin_window_update     264</text>
+    <text x="208" y="362">└ CARenderUpdateAddContext2                          203</text>
+    <text x="224" y="380">└ CA::Render::Updater::prepare_layer0 / prepare_sublayer0  ← 深度递归</text>
+  </g>
+
+  <text x="480" y="428" text-anchor="middle" font-size="12" fill="#374151">解读：<tspan font-weight="600">display update 循环在持续触发</tspan>，每次都要遍历很深的窗口 layer 树做合成准备</text>
+  <text x="480" y="450" text-anchor="middle" font-size="12" fill="#374151">GPU 侧同窗口实测仅 61–116 mW、338–449 MHz（最低档）→ <tspan font-weight="600">瓶颈在 CPU 侧合成逻辑，不在 GPU</tspan></text>
+  <text x="480" y="470" text-anchor="middle" font-size="11" fill="#6b7280">该调用栈在「Codex 在场」与「Codex 已退出」两个状态下都存在，因此与 Computer Use / 屏幕采集无关</text>
+</svg>

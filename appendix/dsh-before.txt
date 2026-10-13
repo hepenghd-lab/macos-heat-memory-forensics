@@ -1,0 +1,68 @@
+########## PROTOCOL RUN: BEFORE - Codex 家族进程在场 ##########
+=== T0 ===
+Tue Oct 13 23:29:41 CST 2026
+--- WindowServer 累计 CPU: 202:58.86  (基准秒数: 730766) ---
+--- CPU 总览 ---
+Load Avg: 2.16, 3.07, 3.42 
+CPU usage: 7.31% user, 14.32% sys, 78.35% idle 
+--- 内存 ---
+PhysMem: 15G used (2420M wired, 6163M compressor), 209M unused.
+Pages free:                                    12170.
+Pages stored in compressor:                   769326.
+Pages occupied by compressor:                 394447.
+Swapouts:                                     348136.
+--- swap ---
+total = 5120.00M  used = 4623.62M  free = 496.38M  (encrypted)
+--- 内存压力 ---
+System-wide memory free percentage: 45%
+--- Codex 家族进程数: 66 ---
+--- 采集链相关进程 ---
+25272 /System/Library/CoreServices/screencaptureui.app/Contents/MacOS/screencaptureui
+27877 ~/.codex/computer-use/Codex Computer Use.app/Contents/MacOS/SkyComputerUseService
+42636 /usr/libexec/replayd
+--- CMPRS Top 12 ---
+PID    COMMAND          MEM   CMPRS
+27942  com.apple.WebKit 2024M 1794M
+4876   com.apple.WebKit 1939M 2002M
+24451  Codex (Service)  984M  57M  
+28148  com.apple.WebKit 907M  915M 
+18310  com.apple.WebKit 821M  833M 
+18457  com.apple.WebKit 818M  776M 
+585    WindowServer     795M  302M 
+24473  Codex (Renderer) 783M  541M 
+3360   Safari           718M  271M 
+20407  Mail             691M  654M 
+29001  com.apple.WebKit 540M  549M 
+41189  com.apple.WebKit 518M  391M 
+
+=== T1 (60 秒后) ===
+Tue Oct 13 23:30:42 CST 2026
+--- WindowServer 累计 CPU: 203:25.66  (结束秒数: 732366) ---
+--- CPU 总览 ---
+Load Avg: 5.61, 4.15, 3.81 
+CPU usage: 7.94% user, 11.17% sys, 80.88% idle 
+--- 内存 ---
+PhysMem: 15G used (2473M wired, 6360M compressor), 304M unused.
+Pages free:                                    15773.
+Pages stored in compressor:                   795124.
+Pages occupied by compressor:                 407054.
+Swapouts:                                     348136.
+--- swap ---
+total = 5120.00M  used = 4607.62M  free = 512.38M  (encrypted)
+--- Codex 家族进程数: 66 ---
+--- 采集链相关进程 ---
+25272 /System/Library/CoreServices/screencaptureui.app/Contents/MacOS/screencaptureui
+27877 ~/.codex/computer-use/Codex Computer Use.app/Contents/MacOS/SkyComputerUseService
+42636 /usr/libexec/replayd
+--- 瞬时 CPU Top 10 ---
+ 28.8 /System/Library/PrivateFrameworks/SkyLight.framework/Resources/WindowServer
+ 24.3 /Applications/ChatGPT.app/Contents/Frameworks/Codex Framework.framework/Versions/155.0.8059.40/Helpers/Codex (Service).app/Contents/MacOS/Codex (Service)
+  9.5 /Applications/DeepSeek Harness.app/Contents/Frameworks/DeepSeek Harness Helper (Renderer).app/Contents/MacOS/DeepSeek Harness Helper (Renderer)
+  3.2 /Applications/DeepSeek Harness.app/Contents/Frameworks/DeepSeek Harness Helper.app/Contents/MacOS/DeepSeek Harness Helper
+  2.2 /usr/libexec/sysmond
+  2.2 /Applications/ChatGPT.app/Contents/Frameworks/Codex Framework.framework/Versions/155.0.8059.40/Helpers/Codex (Renderer).app/Contents/MacOS/Codex (Renderer)
+  1.9 /Applications/ChatGPT.app/Contents/Frameworks/Codex Framework.framework/Versions/155.0.8059.40/Helpers/Codex (Renderer).app/Contents/MacOS/Codex (Renderer)
+  1.8 /Applications/DeepSeek Harness.app/Contents/MacOS/DeepSeek Harness
+  1.4 /Applications/ChatGPT.app/Contents/Frameworks/Codex Framework.framework/Versions/155.0.8059.40/Helpers/Codex (Renderer).app/Contents/MacOS/Codex (Renderer)
+  1.1 /System/Library/CoreServices/screencaptureui.app/Contents/MacOS/screencaptureui
+########## RUN END: BEFORE - Codex 家族进程在场 ##########

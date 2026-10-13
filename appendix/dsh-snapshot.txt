@@ -1,0 +1,18 @@
+Tue Oct 13 23:24:17 CST 2026
+  585 201:12.99  14.9 /System/Library/PrivateFrameworks/SkyLight.framework/Resources/WindowServer
+Pages free:                                     8869.
+Pages occupied by compressor:                 399091.
+total = 5120.00M  used = 4623.62M  free = 496.38M  (encrypted)
+PID    COMMAND          MEM   CMPRS
+27942  com.apple.WebKit 2026M 1724M
+4876   com.apple.WebKit 1975M 2121M
+24451  Codex (Service)  981M  56M  
+28148  com.apple.WebKit 907M  915M 
+18310  com.apple.WebKit 823M  831M 
+18457  com.apple.WebKit 818M  776M 
+585    WindowServer     800M  299M 
+24473  Codex (Renderer) 781M  573M 
+3360   Safari           718M  270M 
+20407  Mail             691M  654M 
+29001  com.apple.WebKit 540M  549M 
+41189  com.apple.WebKit 518M  394M 
